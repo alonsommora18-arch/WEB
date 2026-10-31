@@ -213,3 +213,11 @@ button { font: inherit; }
   .footer-inner { flex-direction: column; justify-content: center; padding: 25px 0; text-align: center; }
   .footer-bottom { font-size: 9px; line-height: 1.6; }
 }
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
