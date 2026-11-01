@@ -110,25 +110,3 @@ const counterObserver = new IntersectionObserver((entries) => {
 counters.forEach(counter => {
     counterObserver.observe(counter);
 });
-
-
-// ANIMACIÓN DE BARRAS
-const progressBars = document.querySelectorAll(".stat-track span");
-
-const progressObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const bar = entry.target;
-            const progress = bar.dataset.progress;
-
-            bar.style.width = progress + "%";
-
-            progressObserver.unobserve(bar);
-        }
-    });
-});
-
-progressBars.forEach(bar => {
-    bar.style.width = "0%";
-    progressObserver.observe(bar);
-});
