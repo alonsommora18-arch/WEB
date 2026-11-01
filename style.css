@@ -220,15 +220,3 @@ html {
 section {
     scroll-margin-top: 90px;
 }
-/* ANIMACIÓN DE BARRAS ESTADÍSTICAS */
-
-.stat-track {
-    overflow: hidden;
-}
-
-.stat-track span {
-    display: block;
-    width: 0;
-    height: 100%;
-    transition: width 1.5s ease;
-}
